@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Pet - Usuários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-body">
+    <header class="app-header"><div class="logo">Hotel Pet</div></header>
+    <main class="container">
+        <div class="titulo">
+            <h1>Usuários</h1>
+            <p>Consulte os usuários e gerencie seus níveis de acesso.</p>
+        </div>
+        <div class="busca">
+            <input type="text" id="buscarUsuario" placeholder="Buscar por nome, e-mail ou função...">
+            <button type="button" onclick="filtrarUsuarios()">🔍 Buscar</button>
+        </div>
+        <div class="tabela-container">
+            <table id="tabelaUsuarios">
+                <thead><tr><th>Nome</th><th>E-mail</th><th>Telefone</th><th>Função</th></tr></thead>
+                <tbody>
+                    <tr><td>Mariana Souza</td><td>mariana@email.com</td><td>(77) 99999-1111</td><td><select aria-label="Função de Mariana Souza"><option>Cliente</option><option>Funcionário</option><option>Gerente</option></select></td></tr>
+                    <tr><td>Pedro Lima</td><td>pedro@email.com</td><td>(77) 98888-2222</td><td><select aria-label="Função de Pedro Lima"><option>Funcionário</option><option>Cliente</option><option>Gerente</option></select></td></tr>
+                    <tr><td>Ana Costa</td><td>ana@email.com</td><td>(77) 97777-3333</td><td><select aria-label="Função de Ana Costa"><option>Gerente</option><option>Funcionário</option><option>Cliente</option></select></td></tr>
+                </tbody>
+            </table>
+            <p><small>Os dados desta versão são demonstrativos. A alteração da função aparece na tela, mas não é salva em banco de dados.</small></p>
+        </div>
+    </main>
+    <nav class="menu-inferior">
+        <a href="reservas.html"><span class="menu-icone">📅</span><span>Reservas</span></a>
+        <a href="pets.html"><span class="menu-icone">🐾</span><span>Pets</span></a>
+        <a href="usuarios.html"><span class="menu-icone">👥</span><span>Usuários</span></a>
+        <a href="perfil.html"><span class="menu-icone">👤</span><span>Perfil</span></a>
+        <a href="configuracoes.html"><span class="menu-icone">⚙️</span><span>Configurações</span></a>
+    </nav>
+    <script>
+        function filtrarUsuarios() {
+            const termo = document.getElementById('buscarUsuario').value.toLowerCase();
+            document.querySelectorAll('#tabelaUsuarios tbody tr').forEach(linha => {
+                linha.style.display = linha.textContent.toLowerCase().includes(termo) ? '' : 'none';
+            });
+        }
+        document.getElementById('buscarUsuario').addEventListener('input', filtrarUsuarios);
+    </script>
+</body>
+</html>

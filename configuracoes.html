@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Pet - Configurações</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>🐾 Hotel Pet</h1>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a> |
+            <a href="reservas.html">Reservas</a> |
+            <a href="pets.html">Pets</a> |
+            <a href="usuarios.html">Usuários</a> |
+            <a href="configuracoes.html">Configurações</a> |
+            <a href="perfil.html">Meu Perfil</a> |
+            <a href="index.html">Sair</a>
+        </nav>
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <h2>Configurações do Sistema</h2>
+
+        <form>
+
+            <fieldset>
+
+                <legend>Hospedagem</legend>
+
+                <label for="diaria">Valor da Diária (R$):</label><br>
+                <input type="number" id="diaria" value="80">
+
+                <br><br>
+
+                <label for="vagas">Quantidade de Vagas:</label><br>
+                <input type="number" id="vagas" value="30">
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+
+                <legend>Horário de Funcionamento</legend>
+
+                <label for="abertura">Abertura:</label><br>
+                <input type="time" id="abertura" value="08:00">
+
+                <br><br>
+
+                <label for="fechamento">Fechamento:</label><br>
+                <input type="time" id="fechamento" value="18:00">
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+
+                <legend>Serviços Disponíveis</legend>
+
+                <input type="checkbox" checked> Hospedagem <br>
+                <input type="checkbox" checked> Banho <br>
+                <input type="checkbox" checked> Tosa <br>
+                <input type="checkbox" checked> Passeio <br>
+                <input type="checkbox"> Transporte <br>
+                <input type="checkbox"> Adestramento
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+
+                <legend>Informações Gerais</legend>
+
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" value="(77) 99999-9999">
+
+                <br><br>
+
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" value="contato@hotelpet.com">
+
+                <br><br>
+
+                <label for="endereco">Endereço:</label><br>
+                <input type="text" id="endereco" value="Rua Principal, 100 - Centro">
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+
+                <legend>Observações</legend>
+
+                <textarea rows="5" cols="60">Bem-vindo ao Hotel Pet! Cuidamos do seu melhor amigo com carinho e segurança.</textarea>
+
+            </fieldset>
+
+            <br>
+
+            <input type="submit" value="Salvar Configurações">
+
+            <input type="reset" value="Restaurar">
+
+        </form>
+
+    </main>
+
+    <hr>
+
+    <footer>
+
+        <p>Hotel Pet © 2026</p>
+        <p>Sistema de Gerenciamento de Hospedagem para Pets</p>
+
+    </footer>
+
+</body>
+
+</html>
