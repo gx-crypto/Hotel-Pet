@@ -1,0 +1,32 @@
+HOTEL PET - PROGRAMACAO WEB II
+
+Como executar:
+1. Extraia todos os arquivos do ZIP para uma mesma pasta.
+2. Abra index.html no navegador.
+3. Informe qualquer e-mail e senha para entrar (login demonstrativo).
+4. Use o menu inferior para navegar pelas telas.
+
+Funcionalidades com JavaScript puro:
+- Navegação entre as páginas.
+- Pesquisa de reservas, pets e usuários.
+- Filtro de reservas por status e usuários por função.
+- Cadastro de reservas e cálculo automático do valor das diárias.
+- Edição de reservas, inclusive as finalizadas (visão do gerente).
+- Visualização dinâmica dos detalhes e histórico de reservas dos pets.
+- Cadastro de pets com opção de enviar uma foto.
+- Fotos dos animais fornecidas para o projeto aparecem na lista e nos detalhes.
+- Exclusão de reservas, pets e usuários com confirmação.
+- Alteração da função de usuários entre Gerente, Funcionário e Cliente.
+- Configuração do valor da diária e da quantidade de vagas.
+- Painel com totais e resumo das reservas.
+- Dados demonstrativos salvos no localStorage do navegador.
+
+Tecnologias:
+- HTML, CSS e JavaScript puro.
+- Sem bibliotecas, frameworks, backend ou banco de dados.
+
+Observações:
+- O login é apenas demonstrativo: não valida conta ou senha em servidor.
+- As informações ficam salvas somente no navegador utilizado.
+- Para começar novamente com os dados iniciais atualizados, limpe o armazenamento local do site (localStorage) nas ferramentas do navegador.
+- Mantenha os arquivos HTML, style.css, app.js e as imagens .jpeg juntos na pasta.
